@@ -14,9 +14,9 @@
 </script>
 
 <div class="container">
-    <h1>
+    <h2>
         Welcome User
-    </h1>
+    </h2>
     <div>
         <img src={profile_icon} alt="profile_image">
     </div>
@@ -35,9 +35,10 @@
 <!-- testing git contribution -->
 
 <style>
-    h1 {
-        font-size: 2em;
-    }
+	h2 {
+		color: white;
+		margin: 0.25em 0;
+	}
 
     img {
         flex: auto;
