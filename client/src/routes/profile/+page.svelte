@@ -1,6 +1,6 @@
-<!-- confirmed: this project uses svelte material ui @smui -->
-
 <script>
+    import Button from '@smui/button';
+
     import Form from './Form.svelte'
     import profile_icon from "./assets/profile_icon.jpg"
 
@@ -21,20 +21,19 @@
         <img src={profile_icon} alt="profile_image">
     </div>
 
-    <button on:click={toggleProfile}>Edit profile</button>
+    <Button on:click={toggleProfile} variant="raised">Edit profile</Button>
         
     {#if toggle}
        <div>
-            <Form/>
-            <button on:click={toggleProfile}>Save</button>
+            <Form />
+            <Button on:click={toggleProfile} variant="raised">Save</Button>
         </div>
     {/if}
     
 </div>
 
-<!-- testing git contribution -->
-
 <style>
+
 	h2 {
 		color: white;
 		margin: 0.25em 0;
@@ -44,10 +43,7 @@
         flex: auto;
     }
 
-    button {
 
-        flex: auto;
-    }
 </style>
 
 

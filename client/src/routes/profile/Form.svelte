@@ -5,10 +5,7 @@
         lastName = '',
         email = '',
         password = ''
-
 </script>
-
-
 
 <form action="profile">
     <Textfield bind:value={firstName} type="text" label="First Name"/>
@@ -22,6 +19,8 @@
         display:  grid;
         width: max-content;
         justify-items: center;
+        padding-top: 5px;
+        padding-bottom: 15px;
     }
 </style>
 
